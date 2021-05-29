@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+:root {
+--pretty-color: #2196F3;
+--while-color: #FFFFFF;
+--black-color: #212121;
+--active-color: #757575;
+}
+
+.page {
+    background-color: #FFFFFF;
+    text-decoration: none;
+    list-style: none;
+    font-family: Roboto, Raleway;
+    color: var(--black-color);
+    font-weight: bold;
+}
+.logo {
+    color: var(--black-color);
+    font-size: 26px;
+    font-family: Raleway;
+    font-style: normal;
+    line-height: 1.192;
+}
+.part-logo {
+    color: var(--pretty-color);
+}
+.logotip {
+    color: var(--while-color);
+    font-size: 26px;
+    font-family: Raleway;
+    font-style: normal;
+    line-height: 1.192;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+ul
+ {
+     list-style: none;
+  }
+.auth-navlist {
+    color: var(--active-color) ;
+    width: 135px;
+    font-weight: 500;
+
+}
+/*site-nav*/
+.site-navlist
+{
+    color: var(--black-color);
+    width: 68px;
+    
+}
+.container {
+    width: 1600px;
+    font-style: normal;
+    line-height: 1.142;
+   
+}
+/*header*/
+.page-header{
+    background: var(--while-color) ;
+    color: var(--black-color);
+    font-family: Roboto;
+    width: 77px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.container a:hover,.container a:focus
+{
+    color: var(--pretty-color);
+}
+.site-nav .link.current {
+    color: var(--pretty-color);
+}
+/* секция post */
+.post {
+    background-color: #2F303A;
+    width: 1600px;
+}
+.post-title {
+    color: var(--while-color);
+    font-family: Roboto;
+    width: 696px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.363;
+}
+/*button*/
+.button {
+    cursor: pointer;
+    color: var(--while-color) ;
+    background-color: var(--pretty-color);
+    font-family: Roboto;
+    width: 136px;
+    font-style: normal;
+    font-size: 16px;  
+    line-height: 1.875; 
+}
+/* секция 2*/
+.section-title {
+    color: var(--black-color);
+    font-family: Roboto;
+    width: 376px;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 1.166;
+}
+/* feature*/
+.feature-list .title {
+    color: var(--black-color) ;
+    font-family: Roboto;
+    width: 270px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.142;
+}
+
+
+.feature-list .post-text {
+    color: var(--active-color);
+    font-family: Roboto;
+    width: 270px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.714;
+}
+/*work-list*/
+.work-list .title {
+    color: var(--black-color);
+    font-family: Roboto;
+    width: 270px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.142;
+}
+.work-list .work {
+    color: var(--active-color);
+    font-family: Roboto;
+    width: 147px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.187;
+}
+/*footer*/
+.footer {
+    background-color: #2F303A ;
+    text-decoration: none;
+    line-height: 1.714;
+    font-style: normal;
+}
+.tel-list .map {
+    color: var(--while-color);
+    font-family: Roboto;
+    width: 231px;
+    font-weight: normal;
+    font-size: 14px;
+    font-style: normal;
+}
+.tel-list .add {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Roboto;
+    width: 231px;
+    font-weight: normal;
+    font-size: 14px;
+    font-style: normal;
+}
+/* portfolio*/
+.none {
+    display: none;
+}
+.main-portfolio {
+    background-color: #E5E5E5;
+}
+
+.button-primary {
+    font-family: Roboto;
+    background-color: #F5F4FA ;
+    color: var(--black-color) ;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.button-primary:hover,.button-primary:focus {
+    color: var(--while-color) ;
+    background-color: var(--pretty-color);
+}
+
+.comunity .post-work {
+    color: var(--black-color) ;
+    font-family: Roboto;
+    width: 322px;
+    font-style: normal;
+    font-size: 18px;
+}
+.comunity .post-app {
+    color: var(--active-color) ;
+    font-family: Roboto;
+    width: 322px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
