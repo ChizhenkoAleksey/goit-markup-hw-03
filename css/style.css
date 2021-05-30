@@ -5,8 +5,7 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
-    margin: 0;
-    padding: 0;
+    
 }
 :root {
 --pretty-color: #2196F3;
@@ -22,12 +21,16 @@ html {
     font-family: Roboto, Raleway;
     color: var(--black-color);
     font-weight: bold;
+    margin: 0;
+    padding: 0;
    
 }
 .logo {
     color: var(--black-color);
+    width: 145px;
     font-size: 26px;
     font-family: Raleway;
+    font-weight: 700px;
     font-style: normal;
     line-height: 1.192;
 }
@@ -35,54 +38,72 @@ html {
     color: var(--pretty-color);
 }
 .logotip {
+    display: inline-block;
     color: var(--while-color);
+    width: 145px;
+    height: 31px;
     font-size: 26px;
     font-family: Raleway;
-    font-style: normal;
+    font-weight: 700;
+    font-style: Bold;
     line-height: 1.192;
+    margin-top: 60px;
+    margin-bottom: 0;
+
 }
 a {
-    color: inherit;
+    color: var(--black-color);
     text-decoration: none;
 }
 ul
  {
      list-style: none;
   }
-.auth-navlist {
+.auth-navlist a{
     color: var(--active-color) ;
     width: 135px;
     font-weight: 500;
 
+}
+.auth-navlist a:hover,.auth-navlist a:focus
+{
+    color: var(--pretty-color);
 }
 /*site-nav*/
 .site-navlist
 {
     color: var(--black-color);
     width: 68px;
-    
+    font-weight: 500;
 }
 .container {
+    color: var(--black-color);
     width: 1200px;
     font-style: normal;
     line-height: 1.142;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin: 0 auto;
+    
     
    
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 /*header*/
 .page-header{
     background: var(--while-color) ;
     color: var(--black-color);
     font-family: Roboto;
-    width: 77px;
+    width: 1200px;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
+    margin: 0 auto;
+    border: 1px solid #ECECEC;
 }
 
-.container a:hover,.container a:focus
+.site-navlist a:hover,.site-navlist a:focus
 {
     color: var(--pretty-color);
 }
@@ -90,30 +111,35 @@ ul
     color: var(--pretty-color);
 }
 /* секция post */
-.post {
-    
+.post { 
+    display: inline-block;
+    background-color: #2F303A;
     width: 1600px;
     height: 600px;
     text-align: center;
+    margin-bottom: 0;
 }
 .post-title {
-
+    
+    color: var(--while-color);
     font-family: Roboto;
     width: 696px;
+    height: 120px;
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.363;
-    margin-left: 452px;
-    margin-top: 200px;
+    margin: 0 auto;
     text-align: center;
+    margin-top: 200px;
+    margin-bottom: 0;
    
     
 }
 
 /*button*/
 .button {
-    display: inline-block;
+    
     cursor: pointer;
     color: var(--while-color) ;
     background-color: var(--pretty-color);
@@ -121,17 +147,21 @@ ul
     width: 200px;
     height: 50px;
     font-style: normal;
+    font-weight: 700;
     font-size: 16px;  
     line-height: 1.875; 
     border-radius: 4px;
     padding: 10px 32px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     margin-top: 40px;
     margin-bottom: 200px;
     border: 0;
 }
 /* секция 2*/
+.section-cont {
+    padding-top: 94px;
+    padding-bottom: 0;
+}
 .section-title {
     color: var(--black-color);
     font-family: Roboto;
@@ -141,16 +171,26 @@ ul
     font-size: 36px;
     line-height: 1.166;
     text-align: center;
-    margin-left: 412px;
+    margin: 0 auto;
+}
+.container > h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.img {
+    margin-top: 50px;
 }
 /* feature*/
 .feature-list .title {
     color: var(--black-color) ;
     font-family: Roboto;
+    font-weight: 700;
     width: 270px;
     font-style: normal;
     font-size: 14px;
     line-height: 1.142;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 
@@ -162,47 +202,69 @@ ul
     font-weight: normal;
     font-size: 14px;
     line-height: 1.714;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 /*work-list*/
+}
+.section-title > ul{
+    margin-top: 50px;
+    margin-bottom: 94px;
+}
 .work-list .title {
     color: var(--black-color);
     font-family: Roboto;
-    width: 270px;
+    font-weight: 500;
+    width: 151px;
     font-style: normal;
     font-size: 14px;
     line-height: 1.142;
+    margin-top: 30px;
+    margin-bottom: 0;
 }
 .work-list .work {
     color: var(--active-color);
     font-family: Roboto;
-    width: 147px;
+    width: 130px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.187;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 /*footer*/
 .footer {
     background-color: #2F303A ;
+    width: 1600px;
+    height: 252px;
     text-decoration: none;
     line-height: 1.714;
     font-style: normal;
+    
+
 }
 .tel-list .map {
+    display: inline-block;
     color: var(--while-color);
     font-family: Roboto;
     width: 231px;
     font-weight: normal;
     font-size: 14px;
     font-style: normal;
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 .tel-list .add {
+    display: inline-block;
     color: rgba(255, 255, 255, 0.6);
     font-family: Roboto;
     width: 231px;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     font-style: normal;
+    margin-top: 9px;
+    margin-bottom: 0;
 }
 /* portfolio*/
 .none {
@@ -213,6 +275,7 @@ ul
 }
 
 .button-primary {
+    cursor: pointer;
     font-family: Roboto;
     background-color: #F5F4FA ;
     color: var(--black-color) ;
