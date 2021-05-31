@@ -9,15 +9,24 @@ html {
 }
 :root {
 --pretty-color: #2196F3;
+--table-color: #EEEEEE;
 --while-color: #FFFFFF;
 --black-color: #212121;
 --active-color: #757575;
+--strong-color: #2F303A;
+--work-color: #F5F4FA;
+--portfolio-color: #E5E5E5;
+--none-color: rgba(0, 0, 0, 0);
+--add-color: rgba(255, 255, 255, 0.6);
+
+
+
 }
 
 .page {
-    background-color: #FFFFFF;
+    background-color: var(--while-color);
     text-decoration: none;
-    width: 1600px;
+   
     list-style: none;
     font-family: Roboto, Raleway;
     color: var(--black-color);
@@ -28,10 +37,10 @@ html {
 }
 .container {
     
-    width: 1200px;
-    font-style: normal;
-    line-height: 1.142;
+    width: 1230px;
     margin: 0 auto;  
+    padding: 0 15px;
+    
 }
 .main-nav {
   display: flex;
@@ -47,8 +56,7 @@ html {
     font-weight: 700px;
     font-style: normal;
     line-height: 1.192;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    
     
 }
 .part-logo {
@@ -75,15 +83,20 @@ a {
 ul
  {
      list-style: none;
-     padding: 0;
+
+     margin: 0;
+  }
+h1 {
+      text-transform: uppercase;
+  }
+  h1, h2, h3 {
+      margin: 0 auto;
   }
 .auth-navlist {
     display: flex;
     align-items: center;
     margin-left:  auto;
     color: var(--active-color) ;
-    width: 135px;
-    height: 16px;
     font-weight: 500;
 
 }
@@ -95,10 +108,10 @@ ul
 .site-navlist
 {
     display: flex;
-    color: var(--black-color);
-    width: 68px;
+    
+   
     font-weight: 500;
-    margin-left: 93px;
+    
 }
 .site-navlist .item+.item {
     margin-left: 50px;
@@ -115,15 +128,10 @@ ul
 }
 /*header*/
 .page-header{
-    background: var(--while-color) ;
-    color: var(--black-color);
-    font-family: Roboto;
-    width: 1200px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    margin: 0 auto;
     
+    background: var(--while-color) ;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .site-navlist a:hover,.site-navlist a:focus
@@ -135,12 +143,12 @@ ul
 }
 /* секция post */
 .post { 
-    display: inline-block;
-    background-color: #2F303A;
-    width: 1600px;
-    height: 600px;
+
+    background-color: var(--strong-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
-    margin-bottom: 0;
+  
 }
 .post-title {
     
@@ -154,7 +162,6 @@ ul
     line-height: 1.363;
     margin: 0 auto;
     text-align: center;
-    margin-top: 200px;
     margin-bottom: 0;
    
     
@@ -177,7 +184,6 @@ ul
     padding: 10px 32px;
     margin: 0 auto;
     margin-top: 40px;
-    margin-bottom: 200px;
     border: 0;
 }
 /* секция 2*/
@@ -188,21 +194,12 @@ ul
 .section-title {
     color: var(--black-color);
     font-family: Roboto;
-    width: 376px;
-    height: 42px;
-    font-style: normal;
     font-size: 36px;
     line-height: 1.166;
     text-align: center;
-    margin: 0 auto;
+    margin-bottom: 50px;
 }
-.container > h2 {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-.img {
-    margin-top: 50px;
-}
+
 /* feature*/
 .feature-list {
     display: flex;
@@ -234,7 +231,7 @@ ul
 }
 /*work-list*/
 .work-nav {
-    background-color: #F5F4FA;
+    background-color: var(--work-color);
 }
 .section-title > ul{
     margin-top: 50px;
@@ -248,7 +245,6 @@ ul
 .work-list {
     display: flex;
     justify-content:space-between;
-    margin-top: 50px;
     margin-bottom: 0;
 }
 .work-list .lissen {
@@ -283,21 +279,24 @@ ul
     
     
 }
+.lissen-work {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .lissen .title {
-    margin: 0 auto;
-    margin-top: 30px;
+    
     text-align: center;
-    margin-bottom: 0;
+   
 }
 .lissen .work {
-    margin: 0 auto;
+   
     margin-top: 10px;
     text-align: center;
-    margin-bottom: 30px;
+
 }
 /*footer*/
 .footer {
-    background-color: #2F303A ;
+    background-color: var(--strong-color) ;
     width: 1600px;
     height: 252px;
     text-decoration: none;
@@ -319,7 +318,7 @@ ul
 }
 .tel-list .add {
     display: inline-block;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--add-color);
     font-family: Roboto;
     width: 231px;
     font-weight: 400;
@@ -330,12 +329,12 @@ ul
 }
 /* portfolio*/
 .none {
-    color: rgba(255, 255, 255, 0);
+    color: var(--none-color);
     margin: 0;
     height: 0;
 }
 .main-portfolio {
-    background-color: #E5E5E5;
+    background-color: var(--portfolio-color);
 }
 .button-text {
     display: flex;
@@ -350,7 +349,7 @@ ul
     cursor: pointer;
     font-family: Roboto;
     font-weight: 500;
-    background-color: #F5F4FA ;
+    background-color: var(--work-color) ;
     color: var(--black-color) ;
     border-radius: 4px;
     font-size: 16px;
@@ -367,6 +366,7 @@ ul
     flex-wrap: wrap;
     margin-top: 50px;
     margin-bottom: 20px;
+    padding-left: 0;
 }
 .comunity img {
     height: 294px;
@@ -374,8 +374,8 @@ ul
 }
 .comunity .text {
     width: 370px;
-    background-color: #EEEEEE;
-    border: 1px solid #FFFFFF;
+    background-color: var(--table-color);
+    border: 1px solid var(--while-color);
     margin-right: 30px;
     margin-bottom: 30px;
 }
