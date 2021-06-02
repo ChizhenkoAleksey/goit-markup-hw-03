@@ -37,7 +37,7 @@ html {
 }
 .container {
     
-    width: 1230px;
+    width: 1200px;
     margin: 0 auto;  
     padding: 0 15px;
     
@@ -56,6 +56,7 @@ html {
     font-weight: 700px;
     font-style: normal;
     line-height: 1.192;
+    margin-right: 93px;
     
     
 }
@@ -65,14 +66,13 @@ html {
 .logotip {
     display: inline-block;
     color: var(--while-color);
-    width: 145px;
-    height: 31px;
+    
     font-size: 26px;
     font-family: Raleway;
     font-weight: 700;
-    font-style: Bold;
+
     line-height: 1.192;
-    margin-top: 60px;
+   
     margin-bottom: 0;
 
 }
@@ -83,7 +83,7 @@ a {
 ul
  {
      list-style: none;
-
+     padding: 0;
      margin: 0;
   }
 h1 {
@@ -174,8 +174,7 @@ h1 {
     color: var(--while-color) ;
     background-color: var(--pretty-color);
     font-family: Roboto;
-    width: 200px;
-    height: 50px;
+
     font-style: normal;
     font-weight: 700;
     font-size: 16px;  
@@ -208,20 +207,22 @@ h1 {
     color: var(--black-color) ;
     font-family: Roboto;
     font-weight: 700;
-    width: 270px;
     font-weight: 16px;
     font-style: Bold;
     font-size: 14px;
     line-height: 1.142;
     margin-top: 0;
     margin-bottom: 0;
+
+}
+.feature-list .title:nth-last-child(-n+4) {
+    margin-right: 0;
 }
 
 
 .feature-list .post-text {
     color: var(--active-color);
     font-family: Roboto;
-    width: 270px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -255,12 +256,12 @@ h1 {
 .work-list .title {
     color: var(--black-color);
     font-family: Roboto;
-    font-weight: 500;
-    width: 151px;
-    font-style: medium;
+    
+
+    
     font-size: 14px;
     line-height: 1.142;
-    margin-top: 30px;
+   
     margin-bottom: 0;
     
 
@@ -296,12 +297,13 @@ h1 {
 }
 /*footer*/
 .footer {
+    
     background-color: var(--strong-color) ;
-    width: 1600px;
-    height: 252px;
     text-decoration: none;
     line-height: 1.714;
     font-style: normal;
+    padding-top: 60px;
+    padding-bottom: 60px;
     
 
 }
@@ -333,9 +335,8 @@ h1 {
     margin: 0;
     height: 0;
 }
-.main-portfolio {
-    background-color: var(--portfolio-color);
-}
+
+
 .button-text {
     display: flex;
     justify-content: center;
@@ -373,9 +374,9 @@ h1 {
     
 }
 .comunity .text {
-    width: 370px;
-    background-color: var(--table-color);
-    border: 1px solid var(--while-color);
+  
+    
+    
     margin-right: 30px;
     margin-bottom: 30px;
 }
@@ -389,11 +390,10 @@ h1 {
 .comunity .post-work {
     color: var(--black-color) ;
     font-family: Roboto;
-    width: 322px;
-    height: 36px;
+   
     font-style: normal;
     font-size: 18px;
-    margin: 20px 24px 4px 24px;
+    
 }
 .comunity .post-app {
     color: var(--active-color) ;
@@ -403,5 +403,14 @@ h1 {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    margin: 0 24px 20px 24px;
+    
+
+}
+.container-portfolio {
+    border-left: 1px solid var(--while-color) ;
+    border-right: 1px solid var(--while-color);
+    border-bottom: 1px solid var(--while-color) ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
 }
