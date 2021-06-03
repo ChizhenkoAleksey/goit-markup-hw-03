@@ -73,7 +73,7 @@ html {
 
     line-height: 1.192;
    
-    margin-bottom: 0;
+    margin-bottom: 20px;
 
 }
 a {
@@ -91,6 +91,9 @@ h1 {
   }
   h1, h2, h3 {
       margin: 0 auto;
+  }
+  p {
+      margin: 0;
   }
 .auth-navlist {
     display: flex;
@@ -215,7 +218,7 @@ h1 {
     margin-bottom: 0;
 
 }
-.feature-list .title:nth-last-child(-n+4) {
+.feature-list .li-on:nth-last-child(-n+4) {
     margin-right: 0;
 }
 
@@ -223,12 +226,16 @@ h1 {
 .feature-list .post-text {
     color: var(--active-color);
     font-family: Roboto;
+    width: 270px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.714;
     margin-top: 10px;
     margin-bottom: 0;
+}
+.feature-list .li-on+.li-on {
+    margin-left: 30px;
 }
 /*work-list*/
 .work-nav {
@@ -240,8 +247,13 @@ h1 {
 }
 .section-img {
     display: flex;
+
     margin: 0;
     justify-content:space-between;
+}
+.img {
+    display: block;
+    max-width: 100%;
 }
 .work-list {
     display: flex;
@@ -315,26 +327,24 @@ h1 {
     font-weight: normal;
     font-size: 14px;
     font-style: normal;
-    margin-top: 20px;
+    
     margin-bottom: 0;
 }
 .tel-list .add {
     display: inline-block;
     color: var(--add-color);
     font-family: Roboto;
-    width: 231px;
     font-weight: 400;
     font-size: 14px;
     font-style: normal;
-    margin-top: 9px;
     margin-bottom: 0;
 }
-/* portfolio*/
-.none {
-    color: var(--none-color);
-    margin: 0;
-    height: 0;
+.tel-list li:nth-last-child(n+2){
+    margin-bottom: 9px;
 }
+
+/* portfolio*/
+
 
 
 .button-text {
@@ -398,8 +408,7 @@ h1 {
 .comunity .post-app {
     color: var(--active-color) ;
     font-family: Roboto;
-    width: 322px;
-    height: 30px;
+    
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -407,10 +416,15 @@ h1 {
 
 }
 .container-portfolio {
-    border-left: 1px solid var(--while-color) ;
-    border-right: 1px solid var(--while-color);
-    border-bottom: 1px solid var(--while-color) ;
+    border-left: 1px solid var(--table-color) ;
+    border-right: 1px solid var(--table-color);
+    border-bottom: 1px solid var(--table-color) ;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
+    padding-right: 24px;
+    margin: 0;
+}
+.post-work:nth-last-child(1n) {
+    padding-bottom: 18px;
 }
