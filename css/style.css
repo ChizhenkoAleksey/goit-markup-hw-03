@@ -131,7 +131,7 @@ h1 {
 }
 /*header*/
 .page-header{
-    
+    border-bottom: 1px solid var(--table-color) ;
     background: var(--while-color) ;
     padding-top: 24px;
     padding-bottom: 25px;
